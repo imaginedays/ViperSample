@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViperCountView.h"
+@class ViperCountPresenter;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ViperCountView>
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+@property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 
+@property (nonatomic, strong) ViperCountPresenter *presenter;    //!< 属性名称
 
 @end
 

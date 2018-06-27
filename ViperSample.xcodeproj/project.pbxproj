@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7687FF8F20E32B28006F2CD0 /* ViperCountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7687FF8E20E32B28006F2CD0 /* ViperCountPresenter.m */; };
+		7687FF9220E32C0B006F2CD0 /* ViperCountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7687FF9120E32C0B006F2CD0 /* ViperCountInteractor.m */; };
 		76FA7D4E20D3BF2B00845BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FA7D4D20D3BF2B00845BD0 /* AppDelegate.m */; };
 		76FA7D5120D3BF2B00845BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FA7D5020D3BF2B00845BD0 /* ViewController.m */; };
 		76FA7D5420D3BF2B00845BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FA7D5220D3BF2B00845BD0 /* Main.storyboard */; };
@@ -16,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7687FF8C20E32A36006F2CD0 /* ViperCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperCountView.h; sourceTree = "<group>"; };
+		7687FF8D20E32B28006F2CD0 /* ViperCountPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperCountPresenter.h; sourceTree = "<group>"; };
+		7687FF8E20E32B28006F2CD0 /* ViperCountPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperCountPresenter.m; sourceTree = "<group>"; };
+		7687FF9020E32C0B006F2CD0 /* ViperCountInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperCountInteractor.h; sourceTree = "<group>"; };
+		7687FF9120E32C0B006F2CD0 /* ViperCountInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViperCountInteractor.m; sourceTree = "<group>"; };
+		7687FF9320E32CBB006F2CD0 /* ViperInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperInteractorIO.h; sourceTree = "<group>"; };
 		76FA7D4920D3BF2B00845BD0 /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FA7D4C20D3BF2B00845BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76FA7D4D20D3BF2B00845BD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7687FF8B20E329FF006F2CD0 /* ViperCore */ = {
+			isa = PBXGroup;
+			children = (
+				7687FF8C20E32A36006F2CD0 /* ViperCountView.h */,
+				7687FF8D20E32B28006F2CD0 /* ViperCountPresenter.h */,
+				7687FF8E20E32B28006F2CD0 /* ViperCountPresenter.m */,
+				7687FF9020E32C0B006F2CD0 /* ViperCountInteractor.h */,
+				7687FF9120E32C0B006F2CD0 /* ViperCountInteractor.m */,
+				7687FF9320E32CBB006F2CD0 /* ViperInteractorIO.h */,
+			);
+			path = ViperCore;
+			sourceTree = "<group>";
+		};
 		76FA7D4020D3BF2B00845BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +79,7 @@
 		76FA7D4B20D3BF2B00845BD0 /* ViperSample */ = {
 			isa = PBXGroup;
 			children = (
+				7687FF8B20E329FF006F2CD0 /* ViperCore */,
 				76FA7D4C20D3BF2B00845BD0 /* AppDelegate.h */,
 				76FA7D4D20D3BF2B00845BD0 /* AppDelegate.m */,
 				76FA7D4F20D3BF2B00845BD0 /* ViewController.h */,
@@ -144,6 +166,8 @@
 				76FA7D5120D3BF2B00845BD0 /* ViewController.m in Sources */,
 				76FA7D5C20D3BF2D00845BD0 /* main.m in Sources */,
 				76FA7D4E20D3BF2B00845BD0 /* AppDelegate.m in Sources */,
+				7687FF9220E32C0B006F2CD0 /* ViperCountInteractor.m in Sources */,
+				7687FF8F20E32B28006F2CD0 /* ViperCountPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

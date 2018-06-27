@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViperCountView.h"
+#import "ViperCountPresenter.h"
+#import "ViperCountInteractor.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,9 +20,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self createScreen];
     return YES;
 }
 
+- (void)createScreen {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    ViewController *view = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    ViperCountPresenter *presenter = [[ViperCountPresenter alloc]init];
+    ViperCountInteractor *interactor = [[ViperCountInteractor alloc]init];
+    
+    view.presenter = presenter;
+    presenter.view = view;
+    
+    presenter.interactor = interactor;
+    interactor.output =  presenter;
+    self.window.rootViewController = view;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
